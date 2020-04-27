@@ -1,0 +1,45 @@
+
+@media only screen and (min-width:766px){
+    
+    .container{
+        width: 680px;
+    }
+    .dashboard-card, 
+    .overview-card{
+        width:45%;
+    }
+    .heading-container{
+        border:none;
+     }
+    .toggle-container{
+        bottom: 2rem;
+        width:120px;
+    }
+
+    .large{
+        font-size:2rem;
+    }
+}
+
+@media only screen and (min-width:1080px){
+    .container{
+        width: 680px;
+    }
+    .dashboard-card, 
+    .overview-card{
+        width:45%;
+    }
+ 
+}
+
+
+@media only screen and (min-width:1200px){
+    .container{
+        width: 1200px;
+    }
+    .dashboard-card, 
+    .overview-card{
+        width:275px;
+    }
+
+}

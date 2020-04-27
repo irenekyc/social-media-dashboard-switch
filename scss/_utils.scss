@@ -1,0 +1,84 @@
+
+//Text
+
+.text-primary{
+    color: white;
+}
+.normal{
+    font-size:1rem;
+}
+.x-large{
+    font-size:3rem;
+}
+.large{
+    font-size:1.6rem;
+}
+.small{
+    font-size:0.8rem;
+}
+.ls-1{
+    letter-spacing: 0.1rem;
+}
+.ls-2{
+    letter-spacing: 0.2rem;
+}
+.text-cap{
+    text-transform: uppercase;
+}
+.bold{
+    font-weight:700;
+}
+.follower-up{
+    color: $primary-lime;
+}
+.follower-down{
+    color: $primary-red;
+}
+
+
+//Layout
+.py-4{
+    padding: 4rem 0;
+}
+
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.p-1{
+    padding:1rem;
+}
+
+.p-2{
+    padding:2rem;
+}
+
+.m-1{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.my-1{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.my-2{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.mr-05{
+    margin-right:0.5rem;
+}
+
+.session{
+    width:100%;
+}
+
+.flex-box-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+

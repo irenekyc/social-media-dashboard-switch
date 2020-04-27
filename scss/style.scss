@@ -1,0 +1,170 @@
+@import 'config';
+@import 'utils';
+@import 'theme';
+
+
+body{
+    font-size:14px;
+    font-family: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.container{
+  width: 330px;
+    margin:auto;
+
+}
+
+.dark-theme{
+  background: $dark-bg;
+  color: $dark-text;
+}
+.light-theme{
+    background: $light-bg;
+    color: $light-text;
+}
+
+//Dashboard Heading
+
+.heading-container{
+    width:100%;
+    position:relative;
+    border-bottom: 1px solid $dark-text;
+ }
+
+
+
+.toggle{
+    &-container{
+    width:100%;
+    position: absolute;
+    bottom: -2rem;
+    right:0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    &-btn{
+        position:relative;
+        width:40px;
+        height:20px;
+        cursor: pointer;
+    }
+
+    &-btn:before{
+        position:absolute;
+        content: "";
+        width:15px;
+        height:15px;
+        top:2.5px;
+        right:2.5px;
+        border-radius: 50%;
+        z-index:2;
+        transition: 0.2s;
+    }
+    &-btn:after{
+        position:absolute;
+        content: "";
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        border-radius: 15px;
+        z-index:1;
+    }
+    &-btn-dark:before{
+        background: $dark-bg;
+    }
+    &-btn-dark:after{
+        background: $toggle-btn-dark-color;
+    }
+
+    &-btn-light:before{
+        background:white;
+    }
+    &-btn-light:after{
+        background: #ccc;
+    }
+}
+
+
+#toggletheme:checked ~.toggle-btn:before{
+    transform: translateX(-20px);
+}
+#toggletheme{
+    display:none;
+}
+
+
+
+// Dashbord main
+
+.dashboard-card{
+    width:100%;
+    height:255px;
+    text-align:center;
+    cursor: pointer;
+    border-radius: 5px;
+    position:relative;
+    z-index:2;
+
+    
+}
+
+.dashboard-card:before{
+    width:100%;
+    height:5px;
+    position: absolute;
+    top:0px;
+    left:0;;
+    content:"";
+    border-radius: 10px 10px 0 0;
+  
+}
+.facebook-card:before{
+   background: $facebook-color;
+
+}
+
+.twitter-card:before{
+    background: $twitter-color;
+}
+
+.ig-card:before{
+    background: $instagram-color;
+}
+
+.youtube-card:before{
+   background: $youtube-color;
+}
+
+
+//Overview
+
+.overview-card{
+    width:100%;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.cardBG{
+    background: $dark-card-bg;
+    &:hover {
+        filter: brightness(125%);
+    }
+
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import 'responsive';

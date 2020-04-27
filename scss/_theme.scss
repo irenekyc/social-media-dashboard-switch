@@ -1,0 +1,17 @@
+@function set-text-color($theme){
+    @if($theme="dark"){
+        @return $dark-text;
+    } @else {
+        @return $light-text;
+    }
+}
+
+
+@function set-bg-color($theme){
+    @if($theme="dark"){
+        @return $dark-bg;
+    } @else {
+        @return $light-bg;
+    }
+}
+
